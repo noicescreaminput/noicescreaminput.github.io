@@ -750,8 +750,7 @@ export interface ApiTaskTask extends Schema.CollectionType {
   };
   attributes: {
     Title: Attribute.String & Attribute.Required & Attribute.Unique;
-    Todo: Attribute.RichText;
-    UID_Title: Attribute.UID<'api::task.task', 'Title'> & Attribute.Private;
+    Finish: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

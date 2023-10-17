@@ -17,14 +17,10 @@
       "required": true,
       "unique": true
     },
-    "Todo": {
-      "type": "richtext",
+    "Finish": {
+      "type": "boolean",
+      "default": false,
       "required": false
-    },
-    "UID_Title": {
-      "type": "uid",
-      "targetField": "Title",
-      "private": true
     }
   }
 }
